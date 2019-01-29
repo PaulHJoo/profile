@@ -1,0 +1,104 @@
+@import "./colours.scss";
+
+li {
+    list-style: none;
+}
+
+/* Colour switching */
+body {
+    background-color: $light-theme-color !important;
+    transition: 500ms color, 500ms background-color;
+}
+
+h1, h2, h3, p, a {
+    color: $dark-theme-color !important;
+    -webkit-text-stroke-width: 0.01em;
+    -webkit-text-stroke-color: transparent;
+    animation-name: text-stroke-animation-2;
+    animation-duration: 500ms;
+}
+
+a:hover {
+    border-style: solid;
+    border-color: $dark-theme-color;
+    transition: 350ms;
+}
+
+.section-underline, underline {
+    border-color: $dark-theme-color;
+    transition: 350ms border-color;
+}
+
+.nav-main, .nav-header-mobile {
+    background-color: $light-theme-color;
+    transition: 500ms background-color;
+}
+
+a {
+    cursor: pointer;
+}
+
+.border {
+    border-style: solid;
+    border-color: $dark-theme-color;
+}
+
+// .current-theme-color {
+//     color: $light-theme-color !important;
+// }
+
+// .opposite-theme-background-color {
+//     background-color: $dark-theme-color;
+// }
+
+/* Dark Theme */
+body.dark {
+    background-color: $dark-theme-color !important;
+    transition: 500ms color, 500ms background-color;
+}
+
+body.dark h1, body.dark h2, body.dark h3, body.dark p, body.dark a {
+    color: $light-theme-color !important;
+    animation-name: text-stroke-animation;
+    animation-duration: 500ms;
+}
+
+body.dark a:hover {
+    border-style: solid;
+    border-color: $light-theme-color;
+    transition: 350ms;
+}
+
+body.dark .section-underline, body.dark .underline {
+    border-color: $light-theme-color;
+    transition: 350ms border-color;
+}
+
+body.dark .nav-main, body.dark .nav-header-mobile {
+    background-color: $dark-theme-color;
+    transition: 500ms background-color;
+}
+
+body.dark .border {
+    border-style: solid;
+    border-color: $light-theme-color;
+}
+
+// body.dark .opposite-theme-background-color {
+//     background-color: $light-theme-color;
+// }
+
+// body.dark .current-theme-color {
+//     color: $dark-theme-color !important;
+// }
+
+
+@keyframes text-stroke-animation {
+    0% { -webkit-text-stroke-color: $text-stroke-color; }
+    100% { -webkit-text-stroke-color: $text-stroke-color; }
+}
+
+@keyframes text-stroke-animation-2 {
+    0% { -webkit-text-stroke-color: $text-stroke-color; }
+    100% { -webkit-text-stroke-color: $text-stroke-color; }
+}

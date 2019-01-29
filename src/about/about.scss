@@ -1,0 +1,19 @@
+@import "../style/media-query.scss";
+
+.heading-container {
+    position: absolute;
+    top: 25%;
+    width: 100%;
+    transform: translateY(100%);
+    opacity: 0;
+}
+
+.heading-margin {
+    margin-top: 35vh;
+}
+
+@media (max-width: $mobile-breakpoint) {
+    .heading-margin {
+        margin-top: 25vh;
+    }
+}

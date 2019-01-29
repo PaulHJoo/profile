@@ -1,0 +1,11 @@
+$light-theme-color: #FFFFFF;
+$dark-theme-color: #333333;
+$text-stroke-color: #CCB294;
+
+.background-grey {
+    background-color: $dark-theme-color;
+}
+
+.background-white {
+    background-color: $light-theme-color;
+}

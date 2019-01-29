@@ -1,0 +1,46 @@
+.animate {
+    transform: none !important;
+    transition: 350ms !important;
+}
+
+.animate-beizer {
+    transform: none !important;
+    transition: 350ms cubic-bezier(.32,1.04,.93,1) !important;
+}
+
+.animate-beizer-slow {
+    transform: none !important;
+    /* transition: 2s cubic-bezier(.14,.5,.08,.54) !important; */
+    transition: 1.5s cubic-bezier(.01,.15,.07,.56) !important;
+}
+
+.animate-visible {
+    opacity: 1 !important;
+    transition: 1.5s cubic-bezier(.32,1.04,.93,1) !important;
+    /* transition-delay: 2ms opacity !important; */
+}
+
+.slide-up {
+    transform: translateY(100%);
+    opacity: 0;
+}
+
+.animate-delay {
+    transition-delay: 1s !important;
+}
+
+/* .opacity-gradient {
+    background-size: 500% auto;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(to right, transparent, black);
+    animation-name: background-slide;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes background-slide {
+    0% { background-position: 0% }
+    100% { background-position: 100% }
+} */

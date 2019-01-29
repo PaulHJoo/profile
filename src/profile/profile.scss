@@ -1,0 +1,19 @@
+@import "../style/media-query.scss";
+
+.profile-height {
+    height: 100vh;
+}
+
+.intro-margin {
+    margin-top: 50px;
+}
+
+@media (max-width: $mobile-breakpoint) {
+    .profile-height {
+        height: 200vh;
+    }
+
+    .intro-margin {
+        margin-top: 25px;
+    }
+}
