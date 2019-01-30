@@ -8,7 +8,25 @@
     margin-top: 50px;
 }
 
+.table {
+    width: 75%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.table-item {
+    width: 33%;
+    display: inline-block;
+    vertical-align: top;
+}
+
 @media (max-width: $mobile-breakpoint) {
+    .table-item {
+        width: 100%;
+        display: block;
+    }
+
     .profile-height {
         height: 200vh;
     }

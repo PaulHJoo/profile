@@ -29,12 +29,12 @@ class About extends React.Component<any, IAboutState> {
         return (
             <section className="viewport-height display-inline-block width-100">
                 <Element name="about" />
-                <div className={"heading-margin slide-up " + slideUpClass}>
+                <div className={"heading-margin slide-up-100 " + slideUpClass}>
                     <p className="text-center text-very-large text-spacing margin-zero">
                         PAUL H. JOO
                     </p>
                 </div>
-                <div className={"animate-delay slide-up " + slideUpClass}>
+                <div className={"animate-delay slide-up-100 " + slideUpClass}>
                     <p className="margin-zero text-center text-spacing text-medium margin-top-15">
                         This needs more whitespace.
                     </p>

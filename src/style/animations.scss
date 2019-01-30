@@ -20,8 +20,13 @@
     /* transition-delay: 2ms opacity !important; */
 }
 
-.slide-up {
+.slide-up-100 {
     transform: translateY(100%);
+    opacity: 0;
+}
+
+.slide-up-25 {
+    transform: translateY(50px);
     opacity: 0;
 }
 
