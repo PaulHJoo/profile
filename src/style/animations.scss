@@ -30,6 +30,11 @@
     opacity: 0;
 }
 
+.slide-down-100 {
+    transform: translateY(-100%);
+    opacity: 0;
+}
+
 .animate-delay {
     transition-delay: 1s !important;
 }

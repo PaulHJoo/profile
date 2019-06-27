@@ -5,7 +5,7 @@ import "normalize.css";
 
 // import scrollToElement from "./services/scroll-to-component";
 import Main from "./main";
-import ScrollToElement from "./services/scroll-to-component";
+import ScrollToElement from "./components/scroll-to-component";
 
 import "./style/colours.scss";
 import "./style/sizing.scss";

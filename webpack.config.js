@@ -23,7 +23,8 @@ module.exports = (env) => {
                     "css-loader",
                     "sass-loader"
                 ] },
-                { test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/, use: "file-loader" }
+                // { test: /\.(.svg)$/,  use: "svg-inline-loader" },
+                { test: /\.(woff(2)?|ttf|eot|png|svg)(\?v=\d+\.\d+\.\d+)?$/, use: "file-loader" }
             ]
         },
         devServer: {

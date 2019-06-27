@@ -43,13 +43,18 @@ a {
     border-color: $dark-theme-color;
 }
 
-// .current-theme-color {
-//     color: $light-theme-color !important;
-// }
+.icon {
+    fill: $dark-theme-color;
+}
 
-// .opposite-theme-background-color {
-//     background-color: $dark-theme-color;
-// }
+.icon:hover {
+    border-style: none;
+    fill: $dark-theme-hover-color;
+}
+
+.inline-icon {
+    fill: $dark-theme-color;
+}
 
 /* Dark Theme */
 body.dark {
@@ -84,13 +89,18 @@ body.dark .border {
     border-color: $light-theme-color;
 }
 
-// body.dark .opposite-theme-background-color {
-//     background-color: $light-theme-color;
-// }
+body.dark .icon {
+    fill: $light-theme-icon-color;
+}
 
-// body.dark .current-theme-color {
-//     color: $dark-theme-color !important;
-// }
+body.dark .icon:hover {
+    border-style: none;
+    fill: $light-theme-color;
+}
+
+body.dark .inline-icon {
+    fill: $light-theme-color;
+}
 
 
 @keyframes text-stroke-animation {

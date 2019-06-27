@@ -40,7 +40,7 @@ class Header extends React.Component<any, IFixedHeaderState> {
         return (
             <header ref={this.HeaderRef} id="nav-header" className={"top-fixed " + slideAnimationClass} >
                 <nav className="nav-main position-relative underline">
-                    <a className="nav-item no-decor nav-text font-normal" onClick={() => this.handleScrollToElement("about")}>ABOUT</a>
+                    <a className="nav-item no-decor nav-text font-normal" onClick={() => this.handleScrollToElement("intro")}>INTRO</a>
                     <a className="nav-item no-decor nav-text font-normal" onClick={() => this.handleScrollToElement("profile")}>PROFILE</a>
                     <a className="nav-item no-decor nav-text font-normal" onClick={() => this.handleScrollToElement("contact")}>CONTACT</a>
                 </nav>
@@ -49,8 +49,8 @@ class Header extends React.Component<any, IFixedHeaderState> {
                 </nav>
                 <ul id="nav-main-mobile" className={"nav-header-mobile underline " + showMenuAnimationClass}>
                     <li className="nav-item">
-                        <a className="nav-text nav-item-mobile-padding font-normal" onClick={() => this.handleScrollToElement("about")}>
-                            ABOUT
+                        <a className="nav-text nav-item-mobile-padding font-normal" onClick={() => this.handleScrollToElement("intro")}>
+                            INTRO
                         </a>
                     </li>
                     <li className="nav-item">
@@ -100,7 +100,10 @@ class Header extends React.Component<any, IFixedHeaderState> {
             menuClicked: false,
             slideInHeader: false
         });
-
+        
+        window.clearTimeout(this.navTimeOut);
+        this.hideNavAfterDelay();
+        
         scroller.scrollTo(element, {
             duration: 1000,
             smooth: "easeInOutQuart"

@@ -1,10 +1,10 @@
 import * as React from "react";
 
 import Header from "../header";
-import About from "../about";
+import Intro from "../Intro";
 import Profile from "../profile";
 import Contact from "../contact";
-import Checkpoint from "../services/checkpoint";
+import Checkpoint from "../components/checkpoint";
 
 interface IMainState {
     prevScrollPos: number;
@@ -22,9 +22,9 @@ class Main extends React.Component<any, IMainState> {
 
     public render() {
         return (
-            <main>
+            <main className="content-width margin-left-right-auto">
                 <Header />
-                <About />
+                <Intro />
                 <div className="section-underline"></div>
                 {/* <Checkpoint onReach={this.fadeToBlack} onRevert={this.fadeToWhite} graphic={this.checkpointGraphic}/> */}
                 <Profile />

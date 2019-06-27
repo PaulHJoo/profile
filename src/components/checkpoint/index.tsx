@@ -8,7 +8,7 @@ interface ICheckpointState {
 
 interface ICheckpointProps {
     onReach: (() => any);
-    onRevert: (() => any);
+    onRevert?: (() => any);
     onScreenTrigger?: number;
     debug?: boolean;
     graphic?: any;
@@ -25,11 +25,11 @@ class Checkpoint extends React.Component<ICheckpointProps, ICheckpointState> {
     public static defaultProps: Partial<ICheckpointProps> = {
         onScreenTrigger: 0.5,
         debug: false,
-        graphic: null
     }
 
     private CheckpointElement: React.RefObject<HTMLDivElement>;
     private CheckpointLocation: number;
+    private checkPosition: (() => void);
 
     public constructor(props: ICheckpointProps) {
         super(props);
@@ -48,7 +48,11 @@ class Checkpoint extends React.Component<ICheckpointProps, ICheckpointState> {
         window.addEventListener("scroll", debounce(this.handleScroll, 50));
         window.addEventListener("resize", debounce(this.handleWindowResize, 200));
 
-        this.checkPosition();
+        if (this.props.onRevert) {
+            this.checkPosition = this.checkPositionWithRevert;
+        } else {
+            this.checkPosition = this.checkPositionWithoutRevert;
+        }
     }
 
     public render() {
@@ -68,7 +72,7 @@ class Checkpoint extends React.Component<ICheckpointProps, ICheckpointState> {
         this.checkPosition();
     }
 
-    private checkPosition = () => {
+    private checkPositionWithRevert = () => {
         const pageCheckPosition = window.pageYOffset + window.innerHeight * this.props.onScreenTrigger;
 
         if (pageCheckPosition >= this.CheckpointLocation && !this.state.reached) {
@@ -83,6 +87,14 @@ class Checkpoint extends React.Component<ICheckpointProps, ICheckpointState> {
                 reached: false,
                 reverted: true
             });
+        }
+    }
+
+    private checkPositionWithoutRevert = () => {
+        const pageCheckPosition = window.pageYOffset + window.innerHeight * this.props.onScreenTrigger;
+
+        if (pageCheckPosition >= this.CheckpointLocation && !this.state.reached) {
+            this.props.onReach();
         }
     }
 }

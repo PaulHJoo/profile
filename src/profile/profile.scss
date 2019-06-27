@@ -1,16 +1,12 @@
 @import "../style/media-query.scss";
 
-.profile-height {
-    height: 100vh;
-}
-
-.intro-margin {
-    margin-top: 50px;
-}
+// .profile-height {
+//     height: 100vh;
+// }
 
 .table {
-    width: 75%;
-    max-width: 1200px;
+    // width: 75%;
+    // max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -21,17 +17,26 @@
     vertical-align: top;
 }
 
+.icon-position {
+    position: relative;
+    top: 3px;
+}
+
 @media (max-width: $mobile-breakpoint) {
+    .table {
+        width: 50%;
+    }
+
     .table-item {
         width: 100%;
         display: block;
     }
 
-    .profile-height {
-        height: 200vh;
-    }
+    // .profile-height {
+    //     height: 100vh;
+    // }
 
-    .intro-margin {
-        margin-top: 25px;
-    }
+    // .intro-margin {
+    //     margin-top: 25px;
+    // }
 }
