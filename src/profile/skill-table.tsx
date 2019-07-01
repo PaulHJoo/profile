@@ -45,16 +45,7 @@ class SkillsTable extends React.Component<ISkillsTableProps> {
                                 Angular
                             </p>
                             <p className="text-center text-small">
-                                JavaScript, TypeScript
-                            </p>
-                            <p className="text-center text-small">
-                                HTML, CSS, SASS
-                            </p>
-                            <p className="text-center text-small">
                                 Webpack
-                            </p>
-                            <p className="text-center text-small">
-                                Gatsby
                             </p>
                         </div>
                     </div>
