@@ -34,7 +34,8 @@ module.exports = (env) => {
         plugins: [
             new HtmlWebpackPlugin({
                 title: "Site",
-                template: "index.html"
+                template: "index.html",
+                favicon: "favicon.png"
             })
         ]
     }
