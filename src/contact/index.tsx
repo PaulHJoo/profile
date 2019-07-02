@@ -42,13 +42,13 @@ class Contact extends React.Component<any, IContactState> {
                     <div className={"max-width-750 margin-left-right-auto margin-bot-20 slide-up-25 " + photoSlideUpClass}>
                         <img className="margin-left-right-auto display-block" src={ProfileImage} />
                         <p className="text-center text-small">
-                            If I have interested you in anyway and would like to chat,<br />feel free to contact me!
+                            Feel free to get in touch!
                             </p>
                         <p className="text-center text-small margin-zero">
-                            Email: dev.pauljoo@gmail.com
+                            <span className="font-normal">Email:</span> dev.pauljoo@gmail.com
                             </p>
                         <p className="text-center text-small margin-zero">
-                            Blog: paulhjoo.com
+                            <span className="font-normal">Blog:</span> paulhjoo.com
                             </p>
                     </div>
                     <Checkpoint onReach={this.iconsSlideUp}/>
