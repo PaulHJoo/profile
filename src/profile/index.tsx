@@ -3,7 +3,7 @@ import { Element } from "react-scroll";
 
 import Checkpoint from "../components/checkpoint";
 import Intro from "./intro";
-import WhatIDo from "./what-i-do-table";
+import WhatIDo from "./what-i-do";
 import SkillsTable from "./skill-table";
 
 import "./profile.scss"

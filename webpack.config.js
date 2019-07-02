@@ -23,7 +23,6 @@ module.exports = (env) => {
                     "css-loader",
                     "sass-loader"
                 ] },
-                // { test: /\.(.svg)$/,  use: "svg-inline-loader" },
                 { test: /\.(woff(2)?|ttf|eot|png|svg)(\?v=\d+\.\d+\.\d+)?$/, use: "file-loader" }
             ]
         },
@@ -33,7 +32,6 @@ module.exports = (env) => {
         },
         plugins: [
             new HtmlWebpackPlugin({
-                title: "Site",
                 template: "index.html",
                 favicon: "favicon.png"
             })

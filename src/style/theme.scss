@@ -24,6 +24,14 @@ a:hover {
     transition: 350ms;
 }
 
+.line-hover:hover {
+    border-style: none;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: $dark-theme-color;
+    transition: 100ms;
+}
+
 .section-underline, underline {
     border-color: $dark-theme-color;
     transition: 350ms border-color;
@@ -72,6 +80,14 @@ body.dark a:hover {
     border-style: solid;
     border-color: $light-theme-color;
     transition: 350ms;
+}
+
+body.dark .line-hover:hover {
+    border-style: none;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: $dark-theme-color;
+    transition: 100ms;
 }
 
 body.dark .section-underline, body.dark .underline {

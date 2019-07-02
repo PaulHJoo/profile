@@ -42,10 +42,10 @@ class WhatIDo extends React.Component<IWhatIDoProps, IWhatIDoState> {
                             <CodeIcon /> Code
                         </p>
                         <p className="text-center text-small margin-zero">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Computers are rocks that were forced into thinking by having bolts of lightning thrown at them.
                         </p>
                         <p className="text-center text-small margin-zero">
-                            Duis sit amet varius lacus. Phasellus et hendrerit sem. Vivamus enim tellus, consequat eu eros vel, convallis pharetra orci.
+                            My trade is pressing buttons to make those rocks do what we want them to do.
                         </p>
                     </div>
                     <Checkpoint onReach={this.consultSlideUp} />
@@ -54,19 +54,25 @@ class WhatIDo extends React.Component<IWhatIDoProps, IWhatIDoState> {
                             <CommentsIcon /> Consult
                         </p>
                         <p className="text-center text-small margin-zero">
-                            Vestibulum gravida porta nibh, nec tincidunt felis vehicula non. Donec nec molestie massa, at tincidunt lectus.
+                            Strangely, the most complicated aspect of forced rock thinking is the human factor.
                         </p>
                         <p className="text-center text-small margin-zero">
-                            Donec fringilla pharetra ultrices. Phasellus dapibus eget quam vitae pharetra. Duis eu volutpat eros.
+                            Communicating to ensure that the correct output is reached in a correct manner, is the consultant's silver bullet made out of bread and butter.
                         </p>
                     </div>
                     <Checkpoint onReach={this.writeSlideUp} />
                     <div className={"slide-up-25 " + writeSlideUpClass}>
                         <p className="text-center text-medium">
                             <WriteIcon /> Write
-                            </p>
+                        </p>
                         <p className="text-center text-small margin-zero">
-                            Vestibulum gravida porta nibh, nec tincidunt felis vehicula non. Donec nec molestie massa, at tincidunt lectus.
+                            The human species has done some weird and whacky stuff to make these thinking rocks give us super powers.
+                        </p>
+                        <p className="text-center text-small margin-zero">
+                            I enjoy writing about the things I've learnt and experienced while traversing these strange lands.
+                        </p>
+                        <p className="text-center text-small margin-zero">
+                            You can read my ramblings <a className="line-hover">here</a>.
                         </p>
                     </div>
                 </div>
