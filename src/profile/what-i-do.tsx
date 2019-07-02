@@ -57,7 +57,10 @@ class WhatIDo extends React.Component<IWhatIDoProps, IWhatIDoState> {
                             Strangely, the most complicated aspect of forced rock thinking is the human factor.
                         </p>
                         <p className="text-center text-small margin-zero">
-                            Communicating to ensure that the correct output is reached in a correct manner, is the consultant's silver bullet made out of bread and butter.
+                            We don't make rocks think for no reason. There is a desired outcome and our field does not exist in a vacuum.
+                        </p>
+                        <p className="text-center text-small margin-zero">
+                            Effective communication at all levels is the consultant's bread and butter made out of silver bullets.
                         </p>
                     </div>
                     <Checkpoint onReach={this.writeSlideUp} />
@@ -72,7 +75,7 @@ class WhatIDo extends React.Component<IWhatIDoProps, IWhatIDoState> {
                             I enjoy writing about the things I've learnt and experienced while traversing these strange lands.
                         </p>
                         <p className="text-center text-small margin-zero">
-                            You can read my ramblings <a className="line-hover">here</a>.
+                            You can read my ramblings <a className="line-hover font-normal">here</a>.
                         </p>
                     </div>
                 </div>

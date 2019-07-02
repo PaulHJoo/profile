@@ -19,7 +19,7 @@ class Intro extends React.Component<IIntroProps> {
                     A software engineer specializing in full-stack web development.
                 </p>
                 <p className="text-center text-small margin-zero">
-                    Currently I'm working in Sydney, AU as a software consultant.
+                    Currently, I'm working in Sydney, AU as a Consultant.
                 </p>
             </div>
         );
