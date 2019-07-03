@@ -56,7 +56,7 @@ class Contact extends React.Component<any, IContactState> {
                         <GitHubIcon href="https://github.com/PaulHJoo" />
                         <LinkedInIcon href="https://www.linkedin.com/in/devpauljoo/" />
                         <TwitterIcon href="https://twitter.com/PaulHJoo" />
-                        <BlogIcon href="https://paulhjoo.com" />
+                        <BlogIcon href="https://paulhj.com" />
                     </div>
                 </div>
             </section>
