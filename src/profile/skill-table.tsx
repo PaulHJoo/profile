@@ -26,9 +26,6 @@ class SkillsTable extends React.Component<ISkillsTableProps> {
                             <p className="text-center text-small">
                                 .NET
                             </p>
-                            <p className="text-center text-small">
-                                SQL
-                            </p>
                         </div>
                     </div>
                     <div className="table-item">

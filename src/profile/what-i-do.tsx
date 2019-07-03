@@ -42,7 +42,7 @@ class WhatIDo extends React.Component<IWhatIDoProps, IWhatIDoState> {
                             <CodeIcon /> Code
                         </p>
                         <p className="text-center text-small margin-zero">
-                            Computers are rocks that were forced into thinking by having bolts of lightning thrown at them.
+                            Computers are rocks that were forced into thinking by having bolts of sparkly lightning thrown at them.
                         </p>
                         <p className="text-center text-small margin-zero">
                             My trade is pressing buttons to make those rocks do what we want them to do.
@@ -60,7 +60,7 @@ class WhatIDo extends React.Component<IWhatIDoProps, IWhatIDoState> {
                             We don't make rocks think for no reason. There is a desired outcome and our field does not exist in a vacuum.
                         </p>
                         <p className="text-center text-small margin-zero">
-                            Effective communication at all levels is the consultant's bread and butter made out of silver bullets.
+                            Effective communication at all levels is the consultant's bread and butter made of silver bullets.
                         </p>
                     </div>
                     <Checkpoint onReach={this.writeSlideUp} />
@@ -69,7 +69,7 @@ class WhatIDo extends React.Component<IWhatIDoProps, IWhatIDoState> {
                             <WriteIcon /> Write
                         </p>
                         <p className="text-center text-small margin-zero">
-                            The human species has done some weird and whacky stuff to make these thinking rocks give us super powers.
+                            The human species has done some weird and whacky stuff to make these thinking rocks give us superpowers.
                         </p>
                         <p className="text-center text-small margin-zero">
                             I enjoy writing about the things I've learnt and experienced while traversing these strange lands.

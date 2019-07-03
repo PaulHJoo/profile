@@ -48,7 +48,7 @@ class Contact extends React.Component<any, IContactState> {
                             <span className="font-normal">Email:</span> dev.pauljoo@gmail.com
                             </p>
                         <p className="text-center text-small margin-zero">
-                            <span className="font-normal">Blog:</span> paulhjoo.com
+                            <span className="font-normal">Blog:</span> <a className="line-hover">paulhj.com</a>
                             </p>
                     </div>
                     <Checkpoint onReach={this.iconsSlideUp}/>
