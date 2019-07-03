@@ -1,5 +1,6 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = (env) => {
     const config = {
@@ -34,7 +35,10 @@ module.exports = (env) => {
             new HtmlWebpackPlugin({
                 template: "index.html",
                 favicon: "favicon.png"
-            })
+            }),
+            new CopyPlugin([
+                { from: "./src/static", to: "" }
+            ])
         ]
     }
 
