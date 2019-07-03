@@ -1,7 +1,7 @@
 import * as React from "react";
 
 import Header from "../header";
-import Intro from "../Intro";
+import Intro from "../intro";
 import Profile from "../profile";
 import Contact from "../contact";
 import Checkpoint from "../components/checkpoint";
