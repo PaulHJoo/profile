@@ -59,9 +59,6 @@ class SkillsTable extends React.Component<ISkillsTableProps> {
                             <p className="text-center text-small">
                                 Docker
                             </p>
-                            <p className="text-center text-small">
-                                Kubernetes
-                            </p>
                         </div>
                     </div>
                 </div>
