@@ -54,7 +54,7 @@ class Contact extends React.Component<any, IContactState> {
                     <Checkpoint onReach={this.iconsSlideUp}/>
                     <div className={"text-center margin-left-right-auto slide-up-25 " + iconsSlideUpClass}>
                         <GitHubIcon href="https://github.com/PaulHJoo" />
-                        <LinkedInIcon href="https://www.linkedin.com/in/devpauljoo/" />
+                        <LinkedInIcon href="https://www.linkedin.com/in/paulhjoo/" />
                         <TwitterIcon href="https://twitter.com/PaulHJoo" />
                         <BlogIcon href="https://paulhj.com" />
                     </div>
