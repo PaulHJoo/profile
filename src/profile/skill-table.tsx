@@ -39,7 +39,7 @@ class SkillsTable extends React.Component<ISkillsTableProps> {
                                 React
                             </p>
                             <p className="text-center text-small">
-                                Angular
+                                Vue
                             </p>
                             <p className="text-center text-small">
                                 Webpack
