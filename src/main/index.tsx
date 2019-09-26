@@ -26,7 +26,6 @@ class Main extends React.Component<any, IMainState> {
                 <Header />
                 <Intro />
                 <div className="section-underline"></div>
-                {/* <Checkpoint onReach={this.fadeToBlack} onRevert={this.fadeToWhite} graphic={this.checkpointGraphic}/> */}
                 <Profile />
                 <Checkpoint onReach={this.fadeToBlack} onRevert={this.fadeToWhite} graphic={this.checkpointGraphic}/>
                 <Contact />

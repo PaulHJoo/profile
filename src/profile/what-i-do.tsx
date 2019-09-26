@@ -75,7 +75,7 @@ class WhatIDo extends React.Component<IWhatIDoProps, IWhatIDoState> {
                             I enjoy writing about the things I've learnt and experienced while traversing these strange lands.
                         </p>
                         <p className="text-center text-small margin-zero">
-                            You can read my ramblings <a className="line-hover font-normal">here</a>.
+                            You can read my ramblings <a className="line-hover font-normal no-decor" href="https://paulhj.com">here</a>.
                         </p>
                     </div>
                 </div>
