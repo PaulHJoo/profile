@@ -4,7 +4,7 @@ const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = (env) => {
     const config = {
-        mode: "development",
+        mode: env,
         entry: {
             "main": "./src/index.tsx"
         },
